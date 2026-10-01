@@ -1,0 +1,47 @@
+name: Preserve and publish public patron record
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['release-config.json', 'mirror.mjs', 'store.mjs', 'commit-record.mjs', 'prepare-pages.mjs', 'verify-published.mjs', 'lib/**', '.github/workflows/mirror.yml']
+  schedule:
+    - cron: '7,27,47 * * * *'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: patron-record
+  cancel-in-progress: false
+jobs:
+  mirror:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+      - name: Fetch and validate public record
+        run: node mirror.mjs
+      - name: Commit record and occasional heartbeat
+        run: |
+          git config user.name 'Patron record archive'
+          git config user.email 'actions@users.noreply.github.com'
+          node commit-record.mjs
+          git push origin HEAD:main
+      - name: Prepare only the validated public JSON
+        run: node prepare-pages.mjs
+      - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
+        with:
+          path: _site
+      - name: Deploy the record explicitly
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
+      - name: Verify served bytes and opaque-origin CORS
+        run: node verify-published.mjs
