@@ -3,9 +3,9 @@
   "collection": "0x73bf0861d91411ee053c7365772394d1e86a71c0",
   "edition": "0xfc07270c7db83f701e587410070961f9bfe11235",
   "title": "Answering Circles; or, Networked Circles",
-  "tokenId": null,
-  "mintBlock": null,
-  "artifactURI": null,
+  "tokenId": "23",
+  "mintBlock": 26100149,
+  "artifactURI": "ipfs://QmTJ2Ayee6fudVEqj4QMCFkG85xbfV2W34GFwgLNmvjsGK",
   "auctionId": null,
   "serviceURL": "https://networkedcircles.averylake.art/state/full-field-v1",
   "companionURL": "https://networkedcircles.averylake.art/",
@@ -14,5 +14,6 @@
   "subtitle": "Hors-Série: Full Field",
   "backupURLs": [
     "https://averylake.github.io/networked-circles-record/full-field-v1.json"
-  ]
+  ],
+  "auctionHouseAtBinding": "0xab48082d28049873ce54f672541d29779a3392ef"
 }
