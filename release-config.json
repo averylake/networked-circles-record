@@ -1,0 +1,18 @@
+{
+  "releaseId": "full-field-v1",
+  "collection": "0x73bf0861d91411ee053c7365772394d1e86a71c0",
+  "edition": "0xfc07270c7db83f701e587410070961f9bfe11235",
+  "title": "Answering Circles; or, Networked Circles",
+  "tokenId": null,
+  "mintBlock": null,
+  "artifactURI": null,
+  "auctionId": null,
+  "serviceURL": "https://networkedcircles.averylake.art/state/full-field-v1",
+  "companionURL": "https://networkedcircles.averylake.art/",
+  "chunkSize": 10,
+  "maxChunks": 8,
+  "subtitle": "Hors-Série: Full Field",
+  "backupURLs": [
+    "https://averylake.github.io/networked-circles-record/full-field-v1.json"
+  ]
+}
