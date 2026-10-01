@@ -1,0 +1,20 @@
+{
+ "version": "full-field-v2",
+ "releaseId": "full-field-v1",
+ "page": 0,
+ "start": 0,
+ "patrons": [
+  {
+   "address": "0x7674586111ec6327c54fcde0bcfaf43384e1fc7e",
+   "block": 26100773,
+   "logIndex": 127,
+   "batchIndex": 0,
+   "transactionHash": "0x1f929c32bde9de9245d5fb3832118fb96e75d2984e25025d364f78b81884e57e",
+   "blockHash": "0x871aac941c8e224057e4eb2785769ae32e033e0f42b25bed667bde947eede490",
+   "timestamp": 1790897519,
+   "index": 0,
+   "label": "calfagri",
+   "handle": "calfagri"
+  }
+ ]
+}

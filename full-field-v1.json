@@ -5,17 +5,36 @@
   "collection": "0x73bf0861d91411ee053c7365772394d1e86a71c0",
   "edition": "0xfc07270c7db83f701e587410070961f9bfe11235",
   "tokenId": "23",
-  "phase": "waiting",
-  "endsAt": null,
-  "auctionId": null,
-  "auctionStart": null,
+  "phase": "live",
+  "endsAt": 1790983919,
+  "auctionId": "1053",
+  "auctionStart": 1790897519,
   "artifactURI": "ipfs://QmTJ2Ayee6fudVEqj4QMCFkG85xbfV2W34GFwgLNmvjsGK",
-  "windowProof": null,
-  "verifiedThrough": null,
-  "updatedAt": "2026-10-01T21:45:02.718Z",
+  "windowProof": {
+    "house": "0xab48082d28049873ce54f672541d29779a3392ef",
+    "auctionId": "1053",
+    "number": 26100773,
+    "hash": "0x871aac941c8e224057e4eb2785769ae32e033e0f42b25bed667bde947eede490",
+    "transactionHash": "0x1f929c32bde9de9245d5fb3832118fb96e75d2984e25025d364f78b81884e57e",
+    "logIndex": 123
+  },
+  "verifiedThrough": {
+    "number": 26100803,
+    "timestamp": 1790897879,
+    "hash": "0x0647f43de49fe3bec770c2b5ce7a2048d7bc5a3fe63621d2ca2650004b4a12ea"
+  },
+  "updatedAt": "2026-10-01T23:53:09.940Z",
   "sealedAt": null,
   "stale": false,
-  "patronCount": 0,
+  "sellerWasCollectionOwner": true,
+  "catchingUp": false,
+  "patronCount": 1,
   "pageSize": 1000,
-  "pages": []
+  "pages": [
+    {
+      "count": 1,
+      "last": "0x7674586111ec6327c54fcde0bcfaf43384e1fc7e",
+      "sha256": "a42c2c7128ca138ee3c377b6dd9bf65b5bc5f84789a99670909bbd90b97a439b"
+    }
+  ]
 }
