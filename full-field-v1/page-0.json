@@ -63,6 +63,18 @@
    "index": 4,
    "label": "artizen",
    "handle": "artizen"
+  },
+  {
+   "address": "0x2c229d7dbee5f9a805c7a26fb0dabf7409e320bf",
+   "block": 26104847,
+   "logIndex": 993,
+   "batchIndex": 0,
+   "transactionHash": "0x80ef5f169e1c0acc486feda9546546307e000cb6c08f7fae4095c844c44de43d",
+   "blockHash": "0x3b4e7e7bc2e2ad13df41258253c88db7389d4d5bab3318cfd84582d2f5092925",
+   "timestamp": 1790946611,
+   "index": 5,
+   "label": "DingDaVinci",
+   "handle": "dingdavinci"
   }
  ]
 }
