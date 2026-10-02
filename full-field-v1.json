@@ -19,22 +19,22 @@
     "logIndex": 123
   },
   "verifiedThrough": {
-    "number": 26104533,
-    "timestamp": 1790942807,
-    "hash": "0x78f38fc53be3a1d01090848738896e1b16552c55c829c0cc8e75a1ed6e5b0253"
+    "number": 26104629,
+    "timestamp": 1790943959,
+    "hash": "0x681285f7a5ca9660da4574098b0a50857c4bb6b9138760076aa15e169e08d9f7"
   },
-  "updatedAt": "2026-10-02T12:24:40.468Z",
+  "updatedAt": "2026-10-02T12:45:12.858Z",
   "sealedAt": null,
   "stale": false,
   "sellerWasCollectionOwner": true,
   "catchingUp": false,
-  "patronCount": 3,
+  "patronCount": 5,
   "pageSize": 1000,
   "pages": [
     {
-      "count": 3,
-      "last": "0x90f64e01ffae16490aefe03c8ed7dab6c66198c3",
-      "sha256": "b48540cf86e051054bb8ab832044133c0f23bb317cef6663f0cb64fb255883aa"
+      "count": 5,
+      "last": "0x63b7d0006102e672e6936fcfe6197e4c782f51d4",
+      "sha256": "08addcab26afe4343e768f4c852054ecb51b412c170f57255178f0909c1bb36c"
     }
   ]
 }
