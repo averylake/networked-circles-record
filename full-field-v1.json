@@ -5,7 +5,7 @@
   "collection": "0x73bf0861d91411ee053c7365772394d1e86a71c0",
   "edition": "0xfc07270c7db83f701e587410070961f9bfe11235",
   "tokenId": "23",
-  "phase": "live",
+  "phase": "closing",
   "endsAt": 1790983919,
   "auctionId": "1053",
   "auctionStart": 1790897519,
@@ -19,22 +19,22 @@
     "logIndex": 123
   },
   "verifiedThrough": {
-    "number": 26107779,
-    "timestamp": 1790981975,
-    "hash": "0xb75a8f097d0534db3cdaaaab8d08ce7567fffd3e8c1a8eca52e20543169b7ba4"
+    "number": 26107875,
+    "timestamp": 1790983127,
+    "hash": "0x75220114da9fd8560b86b92e5d210c79456ef45adcd14160b5bf8988a89c5cbe"
   },
-  "updatedAt": "2026-10-02T23:15:35.494Z",
+  "updatedAt": "2026-10-02T23:33:03.099Z",
   "sealedAt": null,
   "stale": false,
   "sellerWasCollectionOwner": true,
   "catchingUp": false,
-  "patronCount": 9,
+  "patronCount": 10,
   "pageSize": 1000,
   "pages": [
     {
-      "count": 9,
-      "last": "0x7c8400ee2870f8c9a6d71a6a95bf4eb80fd7b621",
-      "sha256": "49ef5dcd30a96ed7f95459a217b6778df9429ea5f3a7a45caf85d9ad510eeb7c"
+      "count": 10,
+      "last": "0xd47561762f18c1a8b780baae4866a4adf132c2ec",
+      "sha256": "36a60ced80f05e6573342978410e33e8d3b58351d098015b2089cfa387dd7791"
     }
   ]
 }
