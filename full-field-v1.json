@@ -19,11 +19,11 @@
     "logIndex": 123
   },
   "verifiedThrough": {
-    "number": 26107493,
-    "timestamp": 1790978519,
-    "hash": "0x5985de07feecd09a1d4dc870b17572d696eaa19f5e8a5c10552b3f059256180f"
+    "number": 26107589,
+    "timestamp": 1790979671,
+    "hash": "0xd2f2bf1132e9cc50d6a32eacf53b40db7f0f275e91895d191779d564ce575cf4"
   },
-  "updatedAt": "2026-10-02T22:18:35.107Z",
+  "updatedAt": "2026-10-02T22:35:18.894Z",
   "sealedAt": null,
   "stale": false,
   "sellerWasCollectionOwner": true,
