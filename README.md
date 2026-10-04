@@ -1,14 +1,28 @@
-# Independent public patron record, R2.4
+# Independent public patron record
 
-Prepared locally. This template has NOT created a repository, deployed Pages or verified a live backup. No RPC key, wallet or paid plan is required by this code. No new Netlify service is required.
+## Current status — checked 4 October 2026
 
-Expected dedicated public repository: `averylake/networked-circles-record`.
-Expected record: `https://averylake.github.io/networked-circles-record/full-field-v1.json` (head) with pages at `https://averylake.github.io/networked-circles-record/full-field-v1/page-<n>.json`, 1,000 patrons each. `store.mjs` keeps the repository in exactly this layout; `verify-published.mjs` checks the head and every page byte for byte.
-The exact address is embedded in the unminted artwork. Confirm the account and path before minting; a different address requires rebuilding the HTML.
+This repository exists and preserves the **sealed gathering of 10 wallets** for *Answering Circles; or, Networked Circles — Hors-Série: Full Field*, Ethereum token **23** in collection `0x73bf0861d91411ee053c7365772394d1e86a71c0`.
 
-## Initial setup after publication approval
+The record was sealed at **2026-10-02T23:51:35.929Z**, through block **26107941**. Its head and page digests remain unchanged by this documentation update.
 
-1. Create the dedicated public repository on its `main` branch. Copy this entire folder, including `.github`, into its root. Do not copy artwork source, secrets or private files. The configuration starts with tokenId, artifactURI and mintBlock unset.
+- [Public record head](https://averylake.github.io/networked-circles-record/full-field-v1.json) and [first page](https://averylake.github.io/networked-circles-record/full-field-v1/page-0.json)
+- [Live companion](https://networkedcircles.averylake.art/)
+- [Source repository](https://github.com/averylake/networked-circles) (private; access required), with a proposed Presences verification archive and reusable release checklist
+- Minted artifact: `ipfs://QmTJ2Ayee6fudVEqj4QMCFkG85xbfV2W34GFwgLNmvjsGK`
+- [Presences gifts on Networked](https://networked.art/averylake/answering-circles-presences) and [verified ERC721 source](https://etherscan.io/address/0x8b6fd450e120a5c8c9e50ff0ff6f136194f60b86#code)
+
+Presences is a later collection of ten personal views gifted to the original participating wallets. It does not modify the original roster or reopen its patron window. The record is about qualifying wallets, not proof of unique human identities.
+
+`release-config.json` here is bound to token 23, mint block 26100149 and the minted artifact. The artwork source's root configuration intentionally retains its mint-time unbound state; the two files have distinct purposes.
+
+The workflow is scheduled every 20 minutes on `main`. Once sealed, its scripts preserve the stored record rather than querying a new roster. This PR does not change the workflow, schedule, configuration or records. A future handover should inspect workflow health and compare served bytes; existence of a checked-in record alone does not guarantee continuing hosting.
+
+Only the public JSON is deployed to Pages. No private credentials or correspondence belong in this repository. Historical setup/recovery instructions follow; their old “not yet created” status has been superseded.
+
+## Historical setup and recovery procedure
+
+1. For recovery into a new approved destination, create the dedicated public repository on its `main` branch. Copy this entire folder, including `.github`, into its root. Do not copy artwork source, secrets or private files. The configuration starts with tokenId, artifactURI and mintBlock unset.
 2. In Settings > Pages, choose **GitHub Actions**, not deployment from a branch. Permit this workflow to write contents and deploy Pages. Configure the `github-pages` environment to allow the main branch. Required approvals on every deployment would prevent unattended updates.
 3. Run “Preserve and publish public patron record” manually. It validates the service record, commits it, uploads only the public JSON and `.nojekyll`, explicitly deploys Pages, then checks the exact served bytes and `Access-Control-Allow-Origin: *` with Origin null. A failed fetch, commit, deploy, CORS check or byte comparison fails the job visibly.
 4. Open the public JSON URL and test it in the release HTML's opaque sandbox. A green local test is not proof of a deployed backup. Run the production release gate only after both primary and backup pass.
